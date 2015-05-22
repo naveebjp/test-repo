@@ -20,6 +20,7 @@ public class DWGettingStartedApplication
     // comment added
     // comment 2 added
     // comment 3 added
+    // comment 4 added
     @Override
     public String getName() {
         return "DWGettingStarted";
