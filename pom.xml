@@ -30,16 +30,7 @@
   	</pluginRepository>
 	</pluginRepositories>
 	
-	<distributionManagement>
-    <repository>
-      <uniqueVersion>false</uniqueVersion>
-      <id>corp1</id>
-      <name>Corporate Repository</name>
-    
-      <layout>default</layout>
-    </repository>
-    
-</distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>io.dropwizard</groupId>
