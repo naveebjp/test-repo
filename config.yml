@@ -10,8 +10,6 @@ server:
     applicationConnectors:
         - type: http
           port: 8081
-        - type: https
-          port: 8444
           keyStorePath: dwstart.keystore
           keyStorePassword: crimson
           validateCerts: false
