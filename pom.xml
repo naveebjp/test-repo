@@ -22,7 +22,13 @@
         <dropwizard.version>0.8.0-rc2</dropwizard.version>
         <mainClass>com.javaeeeee.dwstart.DWGettingStartedApplication</mainClass>
     </properties>
-
+	<pluginRepositories>
+	  <pluginRepository>
+        <id>sonatype-oss-snapshots</id>
+        <name>Sonatype OSS Snapshots</name>
+        <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+  	</pluginRepository>
+	</pluginRepositories>
     <dependencies>
         <dependency>
             <groupId>io.dropwizard</groupId>
