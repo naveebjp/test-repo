@@ -17,9 +17,7 @@ public class DWGettingStartedApplication
         new DWGettingStartedApplication().run(args);
     }
      
-    // comment added
-    // last try1
-    
+        
    
     @Override
     public String getName() {
