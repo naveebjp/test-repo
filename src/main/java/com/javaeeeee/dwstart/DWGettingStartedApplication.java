@@ -19,12 +19,14 @@ public class DWGettingStartedApplication
      
     // comment added
     // last try1
-    // corrected
+    // correcte
    
     @Override
     public String getName() {
         return "DWGettingStarted";
     }
+    
+    //
 
     @Override
     public void initialize(
