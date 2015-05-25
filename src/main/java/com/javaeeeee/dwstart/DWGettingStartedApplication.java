@@ -19,7 +19,7 @@ public class DWGettingStartedApplication
      
     // comment added
     // last try1
-    // corrected
+    // correc
    
     @Override
     public String getName() {
