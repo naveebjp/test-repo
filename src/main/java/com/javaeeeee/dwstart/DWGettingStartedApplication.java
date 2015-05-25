@@ -23,8 +23,7 @@ public class DWGettingStartedApplication
         return "DWGettingStarted";
     }
     
-    
-
+   
     @Override
     public void initialize(
             final Bootstrap<DWGettingStartedConfiguration> bootstrap) {
