@@ -17,7 +17,7 @@ public class DWGettingStartedApplication
         new DWGettingStartedApplication().run(args);
     }
      
-    //started
+    //started day
     
     @Override
     public String getName() {
