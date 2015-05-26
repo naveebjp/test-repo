@@ -5,7 +5,7 @@ login: javaeeeee
 # User  password.
 password: crimson
 
-#Server configuration....
+#Server configuration.
 server:
     applicationConnectors:
         - type: http
