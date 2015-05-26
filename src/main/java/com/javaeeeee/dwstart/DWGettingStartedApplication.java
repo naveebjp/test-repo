@@ -24,7 +24,6 @@ public class DWGettingStartedApplication
     public String getName() {
         return "DWGettingStarted";
     }
-    
   
    
     @Override
