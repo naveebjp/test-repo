@@ -18,7 +18,7 @@ public class DWGettingStartedApplication
     }
      
    // Thanks :(
-    
+    //:(
     
     @Override
     public String getName() {
