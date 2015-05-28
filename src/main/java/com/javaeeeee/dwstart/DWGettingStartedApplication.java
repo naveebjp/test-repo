@@ -16,15 +16,12 @@ public class DWGettingStartedApplication
     public static void main(final String[] args) throws Exception {
         new DWGettingStartedApplication().run(args);
     }
-     
-   
-  
+       
     @Override
     public String getName() {
         return "DWGettingStarted";
     }
   
-   
     @Override
     public void initialize(
             final Bootstrap<DWGettingStartedConfiguration> bootstrap) {
