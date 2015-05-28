@@ -21,7 +21,7 @@ public class DWGettingStartedApplication extends
 	public String getName() {
 		return "DWGettingStarted";
 	}
-	//No agent was running, now it is running, before install we need to write, restarted
+	//No agent was running, now it is running, before install we need to write, restarted, still 
 	@Override
 	public void initialize(
 			final Bootstrap<DWGettingStartedConfiguration> bootstrap) {
