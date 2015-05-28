@@ -21,7 +21,7 @@ public class DWGettingStartedApplication extends
 	public String getName() {
 		return "DWGettingStarted";
 	}
-
+	//No
 	@Override
 	public void initialize(
 			final Bootstrap<DWGettingStartedConfiguration> bootstrap) {
