@@ -62,7 +62,7 @@ public class HelloResourceTest {
         //Obtain client from @Rule.
         Client client = resource.client();
         //Get WebTarget from client using URI of root resource.
-        WebTarget helloTarget = client.target("http://localhost:8080/hello");
+        WebTarget helloTarget = client.target("http://localhost:8085/hello");
         //To invoke response we use Invocation.Builder
         //and specify the media type of representation asked from resource.
         Invocation.Builder builder = helloTarget.request(MediaType.TEXT_PLAIN);
@@ -76,7 +76,7 @@ public class HelloResourceTest {
 
         //Same as above. Everything can be chained.
         actual = resource.client()
-                .target("http://localhost:8080/hello")
+                .target("http://localhost:8085/hello")
                 .request(MediaType.TEXT_PLAIN)
                 .get(String.class);
         assertEquals(expected, actual);
@@ -90,7 +90,7 @@ public class HelloResourceTest {
         String name = "Melinda";
         String expected = "Hello " + name;
         WebTarget target = resource.client()
-                .target("http://localhost:8080/hello")
+                .target("http://localhost:8085/hello")
                 .path("path_param")
                 .path(name);
         String actual = target
@@ -106,7 +106,7 @@ public class HelloResourceTest {
     public void testGetTailoredGreetingPathParamDefault() {
         String expected = "Hello world";
         WebTarget target = resource.client()
-                .target("http://localhost:8080/hello")
+                .target("http://localhost:8085/hello")
                 .path("path_param");
         String actual = target
                 .request(MediaType.TEXT_PLAIN)
@@ -122,7 +122,7 @@ public class HelloResourceTest {
         String name = "Melinda";
         String expected = "Hello " + name;
         WebTarget target = resource.client()
-                .target("http://localhost:8080/hello")
+                .target("http://localhost:8085/hello")
                 .path("query_param")
                 .queryParam("name", name);
         String actual = target
@@ -138,7 +138,7 @@ public class HelloResourceTest {
     public void testGetTailoredGreetingWithQueryParamDefault() {
         String expected = "Hello world";
         WebTarget target = resource.client()
-                .target("http://localhost:8080/hello")
+                .target("http://localhost:8085/hello")
                 .path("query_param");
         String actual = target
                 .request(MediaType.TEXT_PLAIN)
@@ -152,7 +152,7 @@ public class HelloResourceTest {
     @Test
     public void testGetJSONGreeting() {
         Greeting actual = resource.client()
-                .target("http://localhost:8080/hello")
+                .target("http://localhost:8085/hello")
                 .path("/hello_json")
                 .request(MediaType.APPLICATION_JSON)
                 .get(Greeting.class);
@@ -165,7 +165,7 @@ public class HelloResourceTest {
     @Test
     public void testGetJSONGreetingContentNegotiation() {
         Greeting actual = resource.client()
-                .target("http://localhost:8080/hello")
+                .target("http://localhost:8085/hello")
                 .request(MediaType.APPLICATION_JSON)
                 .get(Greeting.class);
         assertEquals(GREETING, actual);
