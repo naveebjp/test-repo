@@ -65,7 +65,7 @@ public class IntegrationTest {
         client.register(feature);
         //Get actual resul string
         String actual = client
-                .target("http://localhost:8080/secured_hello")
+                .target("http://localhost:8085/secured_hello")
                 .request(MediaType.TEXT_PLAIN)
                 .get(String.class);
         //Do an assertion
@@ -120,7 +120,7 @@ public class IntegrationTest {
         client.register(feature);
         //Get response
         Response response = client
-                .target("http://localhost:8080/secured_hello")
+                .target("http://localhost:8085/secured_hello")
                 .request(MediaType.TEXT_PLAIN)
                 .get();
         //Do an assertion
