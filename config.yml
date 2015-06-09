@@ -7,7 +7,7 @@ password: crimson
 
 #Server configuration. done
 server:
-    applicationConnectors:
+    applicationConnectors :
         - type: http
           port: 8085
         - type: https
