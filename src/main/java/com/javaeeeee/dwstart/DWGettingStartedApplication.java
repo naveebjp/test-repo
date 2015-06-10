@@ -21,7 +21,7 @@ public class DWGettingStartedApplication extends
 	public String getName() {
 		return "DWGettingStarted";
 	}
-	//CodeDeploy Demo succeeded
+	//CodeDeploy Demo succeeded.
 	//codeDeploy
 	@Override
 	public void initialize(
