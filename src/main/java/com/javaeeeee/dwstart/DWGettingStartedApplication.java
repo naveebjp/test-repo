@@ -22,7 +22,7 @@ public class DWGettingStartedApplication extends
 		return "DWGettingStarted";
 	}
 	//CodeDeploy Demo succeeded.
-	//codeDeploy
+	//codeDeploy 
 	@Override
 	public void initialize(
 			final Bootstrap<DWGettingStartedConfiguration> bootstrap) {
