@@ -23,7 +23,7 @@ public class DWGettingStartedApplication extends
 	}
 	//CodeDeploy Demo succeeded.
 	//codeDeploy 
-	//tomo demo,
+	//today :(
 	@Override
 	public void initialize(
 			final Bootstrap<DWGettingStartedConfiguration> bootstrap) {
