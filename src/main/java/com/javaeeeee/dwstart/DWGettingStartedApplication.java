@@ -23,7 +23,6 @@ public class DWGettingStartedApplication extends
 	}
 	//CodeDeploy Demo succeeded.
 	//codeDeploy 
-	//)
 	// ki
 	
 	
