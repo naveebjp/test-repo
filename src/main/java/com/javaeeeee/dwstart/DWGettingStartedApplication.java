@@ -23,8 +23,7 @@ public class DWGettingStartedApplication extends
 	}
 	//CodeDeploy Demo succeeded.
 	//codeDeploy 
-	// ki
-	
+	// sonar 
 	
 	@Override
 	public void initialize(
