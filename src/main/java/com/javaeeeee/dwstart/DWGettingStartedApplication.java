@@ -26,6 +26,7 @@ public class DWGettingStartedApplication extends
 	//Sonar 
 	
 	
+	
 	@Override
 	public void initialize(
 			final Bootstrap<DWGettingStartedConfiguration> bootstrap) {
