@@ -23,7 +23,8 @@ public class DWGettingStartedApplication extends
 	}
 	//CodeDeploy Demo succeeded.
 	//codeDeploy 
-	// :)
+	// :) codedeploy instance started
+	
 	
 	@Override
 	public void initialize(
