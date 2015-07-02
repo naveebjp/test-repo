@@ -26,7 +26,7 @@ public class HelloResourceTestNG {
       driver.get(baseUrl);
 
       // get the actual value of the title
-      actualTitle = driver. driver.findElement(By.xpath("xhtml:html/xhtml:body/xhtml:pre")).getText();
+      actualTitle = driver.findElement(By.xpath("xhtml:html/xhtml:body/xhtml:pre")).getText();
 
       /*
        * compare the actual title of the page witht the expected one and print
