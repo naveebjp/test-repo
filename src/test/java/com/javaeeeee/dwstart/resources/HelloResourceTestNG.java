@@ -3,7 +3,8 @@ package com.javaeeeee.dwstart.resources;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
-
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 public class HelloResourceTestNG {
   @BeforeTest
   public void beforeTest() {
