@@ -23,7 +23,7 @@ public class DWGettingStartedApplication extends
 	}
 	//CodeDeploy Demo succeeded.
 	//codeDeploy 
-	//sonar + TestNG sonar is running, 
+	//sonar + TestNG sonar is running, sonar
 	
 	
 	@Override

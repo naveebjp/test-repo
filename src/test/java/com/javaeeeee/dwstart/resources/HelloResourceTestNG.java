@@ -17,7 +17,7 @@ public class HelloResourceTestNG {
   @Test
   public void getGreeting() {
 	  WebDriver driver = new FirefoxDriver();
-      String baseUrl = "http://";
+      String baseUrl = "http://52.25.96.80:8085/hello";
       String expectedTitle = "Hello world!";
       String actualTitle = "";
 
@@ -48,7 +48,7 @@ public class HelloResourceTestNG {
   @Test
   public void getJSONGreeting() {
 	  WebDriver driver = new FirefoxDriver();
-      String baseUrl = "http://";
+      String baseUrl = "http://52.25.96.80:8085/hello";
       String expectedTitle = "Hello world!";
       String actualTitle = "";
 
