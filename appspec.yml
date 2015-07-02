@@ -1,0 +1,20 @@
+version: 0.0
+os: linux
+files:
+  - source: target/DWGettingStarted-1.0-SNAPSHOT.jar
+    destination: /home/ubuntu/application
+  - source: config.yml
+    destination: /home/ubuntu/application
+  - source: dwstart.keystore
+    destination: /home/ubuntu/application
+permissions:
+  - object: /home/ubuntu/application
+    mode: 755
+    type:
+      - file
+hooks:
+  ApplicationStart:
+    - location: script/restarttomcat.sh
+      timeout: 300
+      runas: root
+
