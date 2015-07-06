@@ -171,7 +171,7 @@
 									<keep>true</keep>
 									<artifacts>
 										<artifact>
-											<file>${project.basedir}/target/DWGettingStarted-1.0-SNAPSHOT.jar.jar</file>
+											<file>${project.basedir}/target/DWGettingStarted-1.0-SNAPSHOT.jar</file>
 										</artifact>
 										<artifact>
 											<file>${project.basedir}/src/main/docker/start_up.sh</file>
