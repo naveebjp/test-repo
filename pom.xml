@@ -176,6 +176,9 @@
 										<artifact>
 											<file>${project.basedir}/src/main/docker/start_up.sh</file>
 										</artifact>
+										<artifact>
+											<file>${project.basedir}/config.yml</file>
+										</artifact>
 									</artifacts>
 									<nameAndTag>infomind/test:${project.version}</nameAndTag>
 									<!-- <registry>registry.hub.docker.com</registry> -->
