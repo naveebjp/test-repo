@@ -6,7 +6,6 @@
 	<prerequisites>
 		<maven>3.0.0</maven>
 	</prerequisites>
-
 	<groupId>com.javaeeeee</groupId>
 	<artifactId>DWGettingStarted</artifactId>
 	<version>1.1</version>
