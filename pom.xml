@@ -12,7 +12,7 @@
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>DWGettingStarted</name>
+	<name>${project.artifactId}</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -147,6 +147,65 @@
 						<id>attach-javadocs</id>
 						<goals>
 							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+			
+				<groupId>net.wouterdanes.docker</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+			  <version>3.1-SNAPSHOT</version>
+				
+				<executions>
+					<execution>
+						<id>build</id>
+						<goals>
+							<goal>build-images</goal>
+						</goals>
+						<configuration>
+							<images>
+								<image>
+									<id>${project.artifactId}</id>
+									<dockerFile>${project.basedir}/src/main/docker/Dockerfile</dockerFile>
+									<keep>true</keep>
+									<artifacts>
+										<artifact>
+											<file>${project.basedir}/target/${project.artifactId}.jar</file>
+										</artifact>
+										<artifact>
+											<file>${project.basedir}/src/main/docker/start_up.sh</file>
+										</artifact>
+									</artifacts>
+									<nameAndTag>infomind/repos:${project.version}</nameAndTag>
+									<!-- <registry>registry.hub.docker.com</registry> -->
+									<push>true</push>
+								</image>
+							</images>
+						</configuration>
+					</execution>
+					  <execution>
+						<id>tag</id>
+						<goals>
+							<goal>tag-images</goal>
+						</goals>
+						<configuration>
+							<images>
+								<image>
+									<id>${project.artifactId}</id>
+									<tags>
+										<tag>infomind/repos:latest</tag>
+									</tags>
+									<push>true</push>
+								</image>
+							</images>
+						</configuration>
+					</execution> 
+					
+					<execution>
+						<id>push</id>
+						<goals>
+							<goal>push-images</goal>
 						</goals>
 					</execution>
 				</executions>

@@ -16,7 +16,7 @@ public class HelloResourceTestNG {
 
 
   @Test
-  public void getGreeting() {
+  public void getGreeting() { 
 	  WebDriver driver = new FirefoxDriver();
       String baseUrl = "http://52.25.96.80:8085/hello";
       String expectedTitle = "Hello world!";
@@ -26,7 +26,7 @@ public class HelloResourceTestNG {
       driver.get(baseUrl);
 
       // get the actual value of the title
-      actualTitle = driver.findElement(By.xpath("xhtml:body")).getText();
+      actualTitle = driver.findElement(By.xpath("xhtml:html/xhtml:body/xhtml:pre")).getText();
 
       /*
        * compare the actual title of the page witht the expected one and print
