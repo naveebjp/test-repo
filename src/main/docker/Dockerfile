@@ -2,7 +2,7 @@ FROM infomind/repos
 
 MAINTAINER M1018434
 
-RUN cd /var/lib/jenkins/jobs/test/workspace/target/
+RUN cd /var/lib/jenkins/jobs/Test_docker/workspace/target/
 
 ADD DWGettingStarted.jar /home/ubuntu/application/ 
 
