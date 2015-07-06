@@ -9,7 +9,7 @@
 
 	<groupId>com.javaeeeee</groupId>
 	<artifactId>DWGettingStarted</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>jar</packaging>
 
 	<name>${project.artifactId}</name>
@@ -171,13 +171,13 @@
 									<keep>true</keep>
 									<artifacts>
 										<artifact>
-											<file>${project.basedir}/target/DWGettingStarted-1.0-SNAPSHOT.jar</file>
+											<file>${project.basedir}/target/${project.artifactId}.jar</file>
 										</artifact>
 										<artifact>
 											<file>${project.basedir}/src/main/docker/start_up.sh</file>
 										</artifact>
 									</artifacts>
-									<nameAndTag>infomind/repos:${project.version}</nameAndTag>
+									<nameAndTag>infomind/test:${project.version}</nameAndTag>
 									<!-- <registry>registry.hub.docker.com</registry> -->
 									<push>true</push>
 								</image>
@@ -194,7 +194,7 @@
 								<image>
 									<id>${project.artifactId}</id>
 									<tags>
-										<tag>infomind/repos:latest</tag>
+										<tag>infomind/test:latest</tag>
 									</tags>
 									<push>true</push>
 								</image>
