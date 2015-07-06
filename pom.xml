@@ -166,7 +166,7 @@
 						<configuration>
 							<images>
 								<image>
-									<id>${project.artifactId}</id>
+									<id>${project.artifactId}-${project.version}</id>
 									<dockerFile>${project.basedir}/src/main/docker/Dockerfile</dockerFile>
 									<keep>true</keep>
 									<artifacts>
@@ -192,7 +192,7 @@
 						<configuration>
 							<images>
 								<image>
-									<id>${project.artifactId}</id>
+									<id>${project.artifactId}-${project.version}</id>
 									<tags>
 										<tag>infomind/test:latest</tag>
 									</tags>
