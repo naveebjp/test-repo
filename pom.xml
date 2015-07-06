@@ -171,7 +171,7 @@
 									<keep>true</keep>
 									<artifacts>
 										<artifact>
-											<file>${project.basedir}/target/${project.artifactId}.jar</file>
+											<file>${project.basedir}/target/${project.artifactId}${project.version}.jar</file>
 										</artifact>
 										<artifact>
 											<file>${project.basedir}/src/main/docker/start_up.sh</file>
