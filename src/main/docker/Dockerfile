@@ -2,11 +2,13 @@ FROM preetick/jvcatenv:v1
 
 MAINTAINER M1018434
 
-ADD DWGettingStarted-1.2.jar /home/ubuntu/
+RUN cd /home/ubuntu
 
-COPY config.yml /home/ubuntu/config.yml
+ADD /var/lib/jenkins/jobs/test_docker/workspace/target/DWGettingStarted-1.2.jar /home/ubuntu/
 
-COPY dwstart.keystore /home/ubuntu/dwstart.keystore
+COPY /var/lib/jenkins/jobs/test_docker/workspace/config.yml /home/ubuntu/config.yml
+
+COPY /var/lib/jenkins/jobs/test_docker/workspace/dwstart.keystore /home/ubuntu/dwstart.keystore
 
 ADD start_up.sh /
 
