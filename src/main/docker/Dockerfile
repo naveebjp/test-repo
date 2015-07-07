@@ -2,8 +2,6 @@ FROM preetick/jvcatenv:v1
 
 MAINTAINER M1018434
 
-RUN cd /home/ubuntu
-
 ADD /var/lib/jenkins/jobs/test_docker/workspace/target/DWGettingStarted-1.3.jar /home/ubuntu/
 
 COPY /var/lib/jenkins/jobs/test_docker/workspace/config.yml /home/ubuntu/config.yml
