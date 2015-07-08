@@ -163,22 +163,17 @@
 						<configuration>
 							<images>
 								<image>
-									<id>${project.artifactId}-${project.version}</id>
+									<id>${project.artifactId}</id>
 									<dockerFile>${project.basedir}/src/main/docker/Dockerfile</dockerFile>
 									<keep>true</keep>
 									<artifacts>
 										<artifact>
-											<file>${project.basedir}/target/${project.artifactId}-${project.version}.jar</file>
+											<file>${project.basedir}/target/${project.artifactId}.jar</file>
 										</artifact>
 										<artifact>
 											<file>${project.basedir}/src/main/docker/start_up.sh</file>
 										</artifact>
-										<artifact>
-											<file>${project.basedir}/src/main/docker/config.yml</file>
-										</artifact>
-										<artifact>
-											<file>${project.basedir}/src/main/docker/dwstart.keystore</file>
-										</artifact>
+										
 									</artifacts>
 									<nameAndTag>infomind/test:${project.version}</nameAndTag>
 									<!-- <registry>registry.hub.docker.com</registry> -->
@@ -195,7 +190,7 @@
 						<configuration>
 							<images>
 								<image>
-									<id>${project.artifactId}-${project.version}</id>
+									<id>${project.artifactId}</id>
 									<tags>
 										<tag>infomind/test:latest</tag>
 									</tags>
