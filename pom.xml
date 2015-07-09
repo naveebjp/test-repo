@@ -8,7 +8,7 @@
 	</prerequisites>
 	<groupId>com.javaeeeee</groupId>
 	<artifactId>DWGettingStarted</artifactId>
-	<version>2.0</version>
+	<version>2.1</version>
 	<packaging>jar</packaging>
 
 	<name>${project.artifactId}</name>
@@ -173,7 +173,8 @@
 											<file>${project.basedir}/target/${project.artifactId}.jar</file>
 										</artifact>
 										
-										<artifact>
+										
+										 <artifact>
 											<file>${project.basedir}/src/main/docker/start_up.sh</file>
 										</artifact> 
 										
@@ -183,7 +184,7 @@
 										
 										<artifact>
 											<file>${project.basedir}/dwstart.keystore</file>
-										</artifact>
+										</artifact> 
 										
 										
 									</artifacts>
