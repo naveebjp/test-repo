@@ -1,1 +1,1 @@
-service tomcat7 start;
+nohup java -jar /apps/DWGettingStarted.jar server /apps/config.yml
