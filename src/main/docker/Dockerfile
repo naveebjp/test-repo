@@ -10,4 +10,4 @@ ADD config.yml /apps/
 
 ADD dwstart.keystore /apps/
 
-CMD bash java -version
+CMD bash start_up.sh
