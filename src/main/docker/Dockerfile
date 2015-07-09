@@ -4,7 +4,7 @@ MAINTAINER M1018434
 
 ADD DWGettingStarted.jar /apps/
 
-ADD start_up.sh /apps/
+ADD start_up.sh /
 
 ADD config.yml /apps/
 
