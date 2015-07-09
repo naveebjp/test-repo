@@ -10,5 +10,7 @@ ADD config.yml /apps/
 
 ADD dwstart.keystore /apps/
 
-CMD bash start_up.sh
+CMD ./start_up.sh
+
+
 
