@@ -4,4 +4,6 @@ MAINTAINER M1018434
 
 ADD DWGettingStarted.jar /apps/
 
+ADD start_up.sh /apps/
+
 CMD bash java -version

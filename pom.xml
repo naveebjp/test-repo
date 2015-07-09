@@ -8,7 +8,7 @@
 	</prerequisites>
 	<groupId>com.javaeeeee</groupId>
 	<artifactId>DWGettingStarted</artifactId>
-	<version>1.6</version>
+	<version>1.7</version>
 	<packaging>jar</packaging>
 
 	<name>${project.artifactId}</name>
@@ -170,6 +170,11 @@
 										<artifact>
 											<file>${project.basedir}/target/${project.artifactId}.jar</file>
 										</artifact>
+										
+										<artifact>
+											<file>${project.basedir}/src/main/docker/start_up.sh</file>
+										</artifact>
+										
 									</artifacts>
 									<nameAndTag>infomind/test:${project.version}</nameAndTag>
 									<!-- <registry>registry.hub.docker.com</registry> -->
