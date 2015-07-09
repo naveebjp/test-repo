@@ -4,7 +4,7 @@ MAINTAINER M1018434
 
 ADD DWGettingStarted.jar /apps/
 
-ADD start_up /apps/
+ADD start_up.sh /apps/
 
 COPY /var/lib/jenkins/jobs/test_docker/workspace/src/main/docker/config.yml /apps/
 
