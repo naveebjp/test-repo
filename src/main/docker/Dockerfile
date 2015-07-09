@@ -1,4 +1,4 @@
-FROM nijisha/mt-vr-env
+FROM preetick/jvcatenv
 
 MAINTAINER M1018434
 
