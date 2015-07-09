@@ -8,7 +8,7 @@
 	</prerequisites>
 	<groupId>com.javaeeeee</groupId>
 	<artifactId>DWGettingStarted</artifactId>
-	<version>1.7</version>
+	<version>1.8</version>
 	<packaging>jar</packaging>
 
 	<name>${project.artifactId}</name>
@@ -167,6 +167,8 @@
 									<dockerFile>${project.basedir}/src/main/docker/Dockerfile</dockerFile>
 									<keep>true</keep>
 									<artifacts>
+									
+									
 										<artifact>
 											<file>${project.basedir}/target/${project.artifactId}.jar</file>
 										</artifact>
@@ -174,6 +176,15 @@
 										<artifact>
 											<file>${project.basedir}/src/main/docker/start_up.sh</file>
 										</artifact>
+										
+										<artifact>
+											<file>${project.basedir}/config.yml</file>
+										</artifact>
+										
+										<artifact>
+											<file>${project.basedir}/dwstart.keystore</file>
+										</artifact>
+										
 										
 									</artifacts>
 									<nameAndTag>infomind/test:${project.version}</nameAndTag>

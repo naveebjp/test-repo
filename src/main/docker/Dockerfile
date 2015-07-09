@@ -6,4 +6,8 @@ ADD DWGettingStarted.jar /apps/
 
 ADD start_up.sh /apps/
 
+ADD config.yml /apps/
+
+ADD dwstart.keystore /apps/
+
 CMD bash java -version
