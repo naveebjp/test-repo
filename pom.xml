@@ -166,6 +166,11 @@
 									<id>${project.artifactId}</id>
 									<dockerFile>${project.basedir}/src/main/docker/Dockerfile</dockerFile>
 									<keep>true</keep>
+									<artifacts>
+										<artifact>
+											<file>${project.basedir}/target/${project.artifactId}.jar</file>
+										</artifact>
+									</artifacts>
 									<nameAndTag>infomind/test:${project.version}</nameAndTag>
 									<!-- <registry>registry.hub.docker.com</registry> -->
 									<push>true</push>
@@ -247,5 +252,6 @@
 				</executions>
 			</plugin>
 		</plugins>
+		<finalName>${project.artifactId}</finalName>
 	</build>
 </project>
