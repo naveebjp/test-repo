@@ -2,16 +2,17 @@ FROM preetick/jvcatenv:v1
 
 MAINTAINER M1018434
 
-ADD DWGettingStarted.jar /
+ADD DWGettingStarted.jar /DWGettingStarted.jar
 
-ADD start_up.sh /
+ADD start_up.sh /start_up.sh
 RUN chmod +x /start_up.sh
 
-ADD config.yml /
+ADD config.yml /config.yml
+RUN chmod +x /config.yml
 
-ADD dwstart.keystore /
+ADD dwstart.keystore /dwstart.keystore
 
-CMD bash start_up.sh
+CMD bash /start_up.sh
 
 
 
