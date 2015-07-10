@@ -14,6 +14,6 @@ RUN chmod +x /apps/config.yml
 ADD start_up.sh /apps/start_up.sh
 RUN chmod +x /apps/start_up.sh
 
-CMD ['bash /apps/start_up.sh']
+CMD bash /apps/start_up.sh
 
 

@@ -8,7 +8,7 @@
 	</prerequisites>
 	<groupId>com.javaeeeee</groupId>
 	<artifactId>DWGettingStarted</artifactId>
-	<version>5.1</version>
+	<version>5.2</version>
 	<packaging>jar</packaging>
 
 	<name>${project.artifactId}</name>

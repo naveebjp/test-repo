@@ -1,3 +1,4 @@
 #!/bin/bash
 cd /apps
-nohup java -jar DWGettingStarted.jar server config.yml &
+echo "hello"
+java -jar DWGettingStarted.jar server config.yml
