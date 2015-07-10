@@ -10,7 +10,7 @@ ADD config.yml /
 
 ADD dwstart.keystore /
 
-CMD bash start_up.sh
+CMD sudo sh ./start_up.sh
 
 
 
