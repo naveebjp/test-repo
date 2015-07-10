@@ -1,2 +1,2 @@
 #!/bin/bash
-nohup java -jar DWGettingStarted.jar server config.yml &
+nohup java -jar /apps/DWGettingStarted.jar server /apps/config.yml &
