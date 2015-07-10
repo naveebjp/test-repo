@@ -12,7 +12,7 @@ RUN chmod +x /config.yml
 
 ADD dwstart.keystore /dwstart.keystore
 
-CMD bash /start_up.sh
+CMD bash ./start_up.sh
 
 
 
