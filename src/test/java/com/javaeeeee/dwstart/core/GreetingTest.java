@@ -54,7 +54,7 @@ public class GreetingTest {
     //@Test
     public void testSerializeGreetingToJSON() throws JsonProcessingException {
         //Instantiate a greeting object
-        final Greeting greeting = new Greeting("Hello world!");
+        final Greeting greeting = new Greeting("Hello");
         //Read json from
         String expected = fixture("fixtures/greeting.json");
         //Serialize object to JSON
@@ -71,7 +71,7 @@ public class GreetingTest {
     @Test
     public void testDeerializeGreetingFromJSON() throws IOException {
         //Instantiate a greeting object
-        final Greeting expected = new Greeting("Hello world!");
+        final Greeting expected = new Greeting("Hello");
         //Create an object from JSON
         Greeting actual = MAPPER.readValue(fixture("fixtures/greeting.json"),
                 Greeting.class);

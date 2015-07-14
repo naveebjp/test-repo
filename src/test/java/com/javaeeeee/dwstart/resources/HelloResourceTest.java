@@ -51,14 +51,14 @@ public class HelloResourceTest {
     /**
      * Greeting object to test resources returning JSON response.
      */
-    public static final Greeting GREETING = new Greeting("Hello world!");
+    public static final Greeting GREETING = new Greeting("Hello");
 
     /**
      * Test of getGreeting method, of class HelloResource.
      */
     @Test
     public void testGetGreeting() {
-        String expected = "Hello world!";
+        String expected = "Hello";
         //Obtain client from @Rule.
         Client client = resource.client();
         //Get WebTarget from client using URI of root resource.
@@ -104,7 +104,7 @@ public class HelloResourceTest {
      */
     @Test
     public void testGetTailoredGreetingPathParamDefault() {
-        String expected = "Hello world";
+        String expected = "Hello";
         WebTarget target = resource.client()
                 .target("http://localhost:8085/hello")
                 .path("path_param");
@@ -136,7 +136,7 @@ public class HelloResourceTest {
      */
     @Test
     public void testGetTailoredGreetingWithQueryParamDefault() {
-        String expected = "Hello world";
+        String expected = "Hello";
         WebTarget target = resource.client()
                 .target("http://localhost:8085/hello")
                 .path("query_param");

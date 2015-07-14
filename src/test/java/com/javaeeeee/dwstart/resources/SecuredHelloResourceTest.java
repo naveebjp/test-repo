@@ -50,7 +50,7 @@ public class SecuredHelloResourceTest {
      */
     @Test
     public void testGetGreeting() {
-        String expected = "Hello world!";
+        String expected = "Hello";
         //Obtain client
         Client client = resource.client();
         //Get actual resul string

@@ -47,7 +47,7 @@ public class HelloResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getGreeting() {
-        return "Hello world!";
+        return "Hello";
     }
 
     /**
@@ -73,7 +73,7 @@ public class HelloResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getTailoredGreetingPathParamDefault() {
-        return "Hello world";
+        return "Hello";
     }
 
     /**
@@ -90,7 +90,7 @@ public class HelloResource {
         if (name.isPresent()) {
             return "Hello " + name.get();
         } else {
-            return "Hello world";
+            return "Hello";
         }
         //The same can be accomplished using or(...) method to provide the default value
         //return "Hello " + name.or("world");
@@ -105,7 +105,7 @@ public class HelloResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Greeting getJSONGreeting() {
-        return new Greeting("Hello world!");
+        return new Greeting("Hello");
     }
 
     /**
@@ -117,7 +117,7 @@ public class HelloResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Greeting getJSONGreetingContentNegotiation() {
-        return new Greeting("Hello world!");
+        return new Greeting("Hello");
     }
 
 }

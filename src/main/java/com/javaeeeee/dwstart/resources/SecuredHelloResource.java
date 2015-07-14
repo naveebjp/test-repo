@@ -48,6 +48,6 @@ public class SecuredHelloResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getGreeting(@Auth User user) {
-        return "Hello world!";
+        return "Hello";
     }
 }

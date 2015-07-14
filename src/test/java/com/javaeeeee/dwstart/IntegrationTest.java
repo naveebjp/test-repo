@@ -55,7 +55,7 @@ public class IntegrationTest {
      */
     @Test
     public void testGetGreeting() {
-        String expected = "Hello world!";
+        String expected = "Hello";
         //Obtain client
         Client client = ClientBuilder.newClient();
         //Build a feature in basic authentication mode
@@ -78,7 +78,7 @@ public class IntegrationTest {
      */
     @Test
     public void testGetGreetingHttps() {
-        String expected = "Hello world!";
+        String expected = "Hello";
         //Create SSL Configurator
         SslConfigurator sslConfigurator = SslConfigurator.newInstance();
         //Register a keystore
