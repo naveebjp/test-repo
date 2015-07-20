@@ -8,7 +8,7 @@
 	</prerequisites>
 	<groupId>com.javaeeeee</groupId>
 	<artifactId>DWGettingStarted</artifactId>
-	<version>1.0</version>
+	<version>6.0</version>
 	<packaging>jar</packaging>
 
 	<name>${project.artifactId}</name>
@@ -148,79 +148,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-
-				<groupId>net.wouterdanes.docker</groupId>
-				<artifactId>docker-maven-plugin</artifactId>
-				<version>3.1-SNAPSHOT</version>
-
-				<executions>
-					<execution>
-						<id>build</id>
-						<goals>
-							<goal>build-images</goal>
-						</goals>
-						<configuration>
-							<images>
-								<image>
-									<id>${project.artifactId}</id>
-									<dockerFile>${project.basedir}/src/main/docker/Dockerfile</dockerFile>
-									<keep>true</keep>
-									<artifacts>
-									
-									
-										<artifact>
-											<file>${project.basedir}/target/${project.artifactId}.jar</file>
-										</artifact>
-										
-										
-										 <artifact>
-											<file>${project.basedir}/src/main/docker/start_up.sh</file>
-										</artifact> 
-										
-										<artifact>
-											<file>${project.basedir}/config.yml</file>
-										</artifact>
-										
-										<artifact>
-											<file>${project.basedir}/dwstart.keystore</file>
-										</artifact> 
-										
-										
-									</artifacts>
-									<nameAndTag>infomind/gogoprivate:${project.version}</nameAndTag>
-									<!-- <registry>registry.hub.docker.com</registry> -->
-									<push>true</push>
-								</image>
-							</images>
-						</configuration>
-					</execution>
-					<execution>
-						<id>tag</id>
-						<goals>
-							<goal>tag-images</goal>
-						</goals>
-						<configuration>
-							<images>
-								<image>
-									<id>${project.artifactId}</id>
-									<tags>
-										<tag>infomind/gogoprivate:latest</tag>
-									</tags>
-									<push>true</push>
-								</image>
-							</images>
-						</configuration>
-					</execution>
-
-					<execution>
-						<id>push</id>
-						<goals>
-							<goal>push-images</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+			
 			<plugin>
 				<artifactId>maven-site-plugin</artifactId>
 				<version>3.0</version>
