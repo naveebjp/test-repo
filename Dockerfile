@@ -2,7 +2,7 @@ FROM preetick/jvcatenv:v1
 
 MAINTAINER M1018434
 
-ADD DWGettingStarted.jar /apps/DWGettingStarted.jar
+ADD /target/DWGettingStarted.jar /apps/DWGettingStarted.jar
 RUN chmod +x /apps/DWGettingStarted.jar
 
 ADD dwstart.keystore /apps/dwstart.keystore
