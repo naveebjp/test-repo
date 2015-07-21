@@ -36,7 +36,7 @@ import javax.ws.rs.core.MediaType;
  *
  * @author Dmitry Noranovich
  */
-@Path("/hello")
+@Path("/helloone")
 public class HelloResource {
 
     /**
@@ -73,7 +73,7 @@ public class HelloResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getTailoredGreetingPathParamDefault() {
-        return "Hello";
+        return "Hello DW";
     }
 
     /**
@@ -90,7 +90,7 @@ public class HelloResource {
         if (name.isPresent()) {
             return "Hello " + name.get();
         } else {
-            return "Hello";
+            return "Hello DW";
         }
         //The same can be accomplished using or(...) method to provide the default value
         //return "Hello " + name.or("world");
@@ -117,7 +117,7 @@ public class HelloResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Greeting getJSONGreetingContentNegotiation() {
-        return new Greeting("Hello");
+        return new Greeting("Hello DW");
     }
 
 }
