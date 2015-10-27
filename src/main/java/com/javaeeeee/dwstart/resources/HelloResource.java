@@ -56,68 +56,6 @@ public class HelloResource {
      * @param name name of a person to greet
      * @return greeting "Hello" + name from URL
      */
-    @Path("/path_param/{name}")
-    @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String getTailoredGreetingPathParam(@PathParam(value = "name") String name) {
-        return "Hello " + name;
-    }
-
-    /**
-     * Default values are not supported by path parameters.
-     * https://java.net/projects/jersey/lists/users/archive/2012-03/message/100
-     *
-     * @return "Hello world" string without quotes
-     */
-    @Path("/path_param")
-    @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String getTailoredGreetingPathParamDefault() {
-        return "Hello World !!!";
-    }
-
-    /**
-     * A greeting method using query parameter.
-     *
-     * @param name name of a person to greet
-     * @return greeting "Hello" + name from query
-     */
-    @Path("/query_param")
-    @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String getTailoredGreetingWithQueryParam(
-            @QueryParam("name") Optional<String> name) {
-        if (name.isPresent()) {
-            return "Hello " + name.get();
-        } else {
-            return "Hello World !!!";
-        }
-        //The same can be accomplished using or(...) method to provide the default value
-        //return "Hello " + name.or("world");
-    }
-
-    /**
-     * Resource method producing greeting in JSON format.
-     *
-     * @return a Greeting object
-     */
-    @Path("/hello_json")
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public Greeting getJSONGreeting() {
-        return new Greeting("Hello World !!!");
-    }
-
-    /**
-     * Resource method producing greeting in JSON format with the same path as
-     * the getGreeting method which produces plain text.
-     *
-     * @return a Greeting object
-     */
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public Greeting getJSONGreetingContentNegotiation() {
-        return new Greeting("Hello World !!!");
-    }
+    
 
 }
