@@ -47,7 +47,7 @@ public class HelloResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getGreeting() {
-        return "Hello, Welcome to K safari learning !!!";
+        return "Hello, Welcome to K safari AWS learning !!!";
     }
 
     /**
